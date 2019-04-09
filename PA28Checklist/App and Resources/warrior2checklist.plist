@@ -6,7 +6,7 @@
 	<string>InspectCockpit,InspectRightWing,InspectNose,InspectLeftWing,InspectFuselageEmpenage,BeforeStart,EngineStart,AfterStart,BeforeTaxi,Taxi,BeforeRunup,Runup,BeforeTakeoff,BeforeTakeoffFinal,AfterTakeoff,Cruise,30Minutes,90Minutes,SMAACCApproach,GUMPCSBeforeLanding,AfterLanding,Stop,Secure</string>
 	<key>InspectCockpit</key>
 	<array>
-		<string>Remove Tiedowns, Locks and Cover</string>
+		<string>Remove Tie-downs, Locks and Cover</string>
 		<string>Set Brake</string>
 		<string>Engine Time Recorded</string>
 		<string>All Switches / Fans Off</string>

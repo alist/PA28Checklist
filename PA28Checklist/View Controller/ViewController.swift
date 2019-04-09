@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import AVFoundation
+
+fileprivate let speechRate: Float = 0.5
 
 class CheckCell: UITableViewCell {
   @IBOutlet weak var todoLabel: UILabel!
@@ -17,9 +20,10 @@ class CheckCell: UITableViewCell {
   }
 }
 
-
 class ViewController: UIViewController {
   @IBOutlet weak var tableView: UITableView!
+  let speechSynth = AVSpeechSynthesizer()
+  
   /// Sections have their arrays of todos
   var todoData: [(String, Array<(String, Bool)>)] = []
   static let order = "order"
@@ -52,12 +56,31 @@ class ViewController: UIViewController {
     }
   }
   
+  func speakTodo() {
+    guard let nextToDo = nextToDo else { return }
+    
+    if nextToDo.row == 0 {
+      let sectionText = todoData[nextToDo.section].0
+      let utter = AVSpeechUtterance(string: sectionText)
+      utter.rate = speechRate
+      utter.postUtteranceDelay = 0.3
+      speechSynth.speak(utter)
+    }
+    
+    let item = todoData[nextToDo.section].1[nextToDo.row]
+    let text = Array(item.0.split(separator: " ").prefix(2)).joined(separator: " ")
+    let utter = AVSpeechUtterance(string: text)
+    utter.rate = speechRate
+    speechSynth.speak(utter)
+  }
+  
   func updateUI() {
     let selectedPaths = tableView.indexPathsForSelectedRows ?? []
     for path in selectedPaths {
       tableView.deselectRow(at: path, animated: false)
     }
     tableView.selectRow(at: nextToDo, animated: true, scrollPosition: .middle)
+    speakTodo()
   }
   
   override func viewDidLoad() {
