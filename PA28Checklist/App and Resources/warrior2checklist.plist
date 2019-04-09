@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>order</key>
+	<string>InspectCockpit,InspectRightWing,InspectNose,InspectLeftWing,InspectFuselageEmpenage,BeforeStart,EngineStart,AfterStart,BeforeTaxi,Taxi,BeforeRunup,Runup,BeforeTakeoff,BeforeTakeoffFinal,AfterTakeoff,Cruise,30Minutes,90Minutes,SMAACCApproach,GUMPCSBeforeLanding,AfterLanding,Stop,Secure</string>
+	<key>InspectCockpit</key>
+	<array>
+		<string>Remove Tiedowns, Locks and Cover</string>
+		<string>Set Brake</string>
+		<string>Engine Time Recorded</string>
+		<string>All Switches / Fans Off</string>
+		<string>Battery On</string>
+		<string>Fuel Quantity Checked</string>
+		<string>Stall Warning Checked </string>
+		<string>Fin Light Checked</string>
+		<string>Battery Off</string>
+		<string>Airworthiness, Registration, Radio Cert(Intnl), Operating Handbook with Weight and Balance</string>
+	</array>
+	<key>InspectRightWing</key>
+	<array>
+		<string>Flap Hinges Intact</string>
+		<string>Aileron Hinges Intact</string>
+		<string>Wingtip / Lights Intact</string>
+		<string>Leading Edge Clean</string>
+		<string>Shaking Wing Inspires Confidence</string>
+		<string>Fuel Quantity Tabs or Above</string>
+		<string>Fuel Vent Clear</string>
+		<string>Fuel Strainer Sampled</string>
+		<string>Landing Gear Strut / Brake / Tire Checked</string>
+		<string>Air Inlet Clear</string>
+	</array>
+	<key>InspectNose</key>
+	<array>
+		<string>Engine Clear of Obvious Issues</string>
+		<string>Oil Quantity Between 5.5 and 6</string>
+		<string>Right Cowling Locked</string>
+		<string>Alternator Band Checked</string>
+		<string>Propellor Free of Chips</string>
+		<string>Air Inlets Clear of Birds</string>
+		<string>Nose Gear and Tire Good</string>
+		<string>Brake Fluid Substantial</string>
+		<string>Left Cowling Locked</string>
+		<string>Fuel Sump Strained</string>
+	</array>
+	<key>InspectLeftWing</key>
+	<array>
+		<string>Air Inlet Clear</string>
+		<string>Stall Warning Unobstructed</string>
+		<string>Fuel Strainer Sampled</string>
+		<string>Landing Gear Strut / Brake / Tire Checked</string>
+		<string>Leading Edge Clean &amp; No Frost</string>
+		<string>Shaking Wing Inspires Confidence</string>
+		<string>Fuel Quantity Tabs or Above</string>
+		<string>Wingtip / Lights Intact</string>
+		<string>Pitot Tube Inlets Clear</string>
+		<string>Fuel Vent Clear</string>
+		<string>Flap Hinges Intact</string>
+		<string>Aileron Hinges Intact</string>
+	</array>
+	<key>InspectFuselageEmpenage</key>
+	<array>
+		<string>Antennae Present</string>
+		<string>Fin Air Inlet Clear</string>
+		<string>Stabilator and Trim As Intended</string>
+		<string>Rudder Intact</string>
+		<string>Empenage Sturdy &amp; Free of Birds</string>
+		<string>Walk Around Normal</string>
+	</array>
+	<key>BeforeStart</key>
+	<array>
+		<string>Seat Belts Fastened</string>
+		<string>Battery On</string>
+		<string>Alternator On</string>
+		<string>Anti-Collision Fin Light On</string>
+		<string>Nav Lights (as needed)</string>
+		<string>Fuel Selector On Lowest Tank</string>
+		<string>Pre-Heated (temp &lt;40 degrees)</string>
+	</array>
+	<key>EngineStart</key>
+	<array>
+		<string>Pilot In-Command Established</string>
+		<string>Parking Brake Set</string>
+		<string>Electric Fuel Pump (set)</string>
+		<string>Mixture Full Rich, Throttle 1/4 inch</string>
+		<string>Primer (3-6 winter, cold)</string>
+		<string>PROP CLEAR!</string>
+		<string>Left hand engage, right hand mixture / trottle</string>
+	</array>
+	<key>AfterStart</key>
+	<array>
+		<string>Throttle 1000 rpm</string>
+		<string>LOOK: Annunciators Out, Engine Instruments Good</string>
+		<string>Electric Fuel Pump Off</string>
+		<string>Mixture Leaned</string>
+		<string>Alternator Voltage Stable</string>
+	</array>
+	<key>BeforeTaxi</key>
+	<array>
+		<string>Avionics On</string>
+		<string>Radios Set Ground and Air</string>
+		<string>ATIS Received</string>
+		<string>Transponder On Mode C, Squak 1200</string>
+		<string>Circuits Check</string>
+	</array>
+	<key>Taxi</key>
+	<array>
+		<string>Toe Brakes Test</string>
+		<string>Squak Code Request</string>
+	</array>
+	<key>BeforeRunup</key>
+	<array>
+		<string>Switch Fuel Tanks</string>
+		<string>Mixture Rich</string>
+	</array>
+	<key>Runup</key>
+	<array>
+		<string>Brakes Set</string>
+		<string>Throttle 2000 rpm</string>
+		<string>Look around: Engine In Limits</string>
+		<string>Magnetos Check Each</string>
+		<string>Annunciators Test</string>
+		<string>Gyro suction </string>
+		<string>Carb Heat On</string>
+		<string>Minimum Trottle</string>
+		<string>RPM and Oil pressure check</string>
+		<string>Carb Heat Off </string>
+		<string>Resume 1000 rpm</string>
+	</array>
+	<key>BeforeTakeoff</key>
+	<array>
+		<string>Check Flight Controls</string>
+		<string>Flight Instruments Check</string>
+		<string>Radios Switched to Air</string>
+		<string>Flaps Set</string>
+		<string>Takeoff Plan Discussed</string>
+		<string>Wind Direction Established</string>
+		<string>Abort Plan: Return Altitude &amp; Lift-Off Point Planned (+500 AGL noted) </string>
+	</array>
+	<key>BeforeTakeoffFinal</key>
+	<array>
+		<string>Flaps, Fuel, Trim Lights Camera Action</string>
+		<string>Fuel Pump On</string>
+		<string>Landing Light On</string>
+		<string>Time Off Noted</string>
+	</array>
+	<key>AfterTakeoff</key>
+	<array>
+		<string>Flaps Up</string>
+		<string>Electric Fuel Pump Off</string>
+	</array>
+	<key>Cruise</key>
+	<array>
+		<string>Throttle to Scheduled RPM</string>
+		<string>Mixture Leaned</string>
+		<string>Landing Light Off</string>
+		<string>FREDA</string>
+	</array>
+	<key>FREDA</key>
+	<array>
+		<string>Fuel In tank adequate (switch every 60m)</string>
+		<string>Radios</string>
+		<string>Engine</string>
+		<string>Directional Heading Indicator Synced with Magnetic Compass</string>
+	</array>
+	<key>30Minutes</key>
+	<array>
+		<string>Fuel Pump and Switch Tanks</string>
+		<string>FREDA</string>
+	</array>
+	<key>90Minutes</key>
+	<array>
+		<string>Fuel Pump and Switch Tanks</string>
+		<string>FREDA</string>
+	</array>
+	<key>SMAACCApproach</key>
+	<array>
+		<string>Seatbelts</string>
+		<string>Mixture Rich</string>
+		<string>ATIS / Approach Briefing: Runway, Landing Speed, Radios</string>
+		<string>Altimeter</string>
+		<string>Compass sync Directional Heading Indicator</string>
+		<string>Carb Heat, Reduce Power (200rpm / 500fpm)</string>
+	</array>
+	<key>GUMPCSBeforeLanding</key>
+	<array>
+		<string>Gas- Adequate, Pump On</string>
+		<string>Undercarrage Down</string>
+		<string>Mixture Rich</string>
+		<string>Props</string>
+		<string>Carb Heat Off</string>
+		<string>Switches: Landing light, Electric Fuel Pump On</string>
+	</array>
+	<key>AfterLanding</key>
+	<array>
+		<string>Trim / Flaps Neutral</string>
+		<string>Mixture Leaned</string>
+		<string>Switches: Landing Lights and Pump Off </string>
+		<string>Radio Ground Frequency</string>
+	</array>
+	<key>Stop</key>
+	<array>
+		<string>Avionics Off</string>
+		<string>Mixture to Cutoff</string>
+		<string>Master Switch Off</string>
+		<string>Magnetos Off &amp; Keys On Dash</string>
+	</array>
+	<key>Secure</key>
+	<array>
+		<string>Engine time Recorded</string>
+		<string>Locks / Keys / Pens / Headsets removed</string>
+		<string>Steering Wheel Locked</string>
+		<string>Door and Window secured</string>
+		<string>Cover Replaced</string>
+		<string>Tie Downs</string>
+		<string>Call for fuel</string>
+		<string>Look back on way away</string>
+	</array>
+	<key>PreManeuver</key>
+	<array>
+		<string>FREDA check</string>
+		<string>Radio: frequency for practice area or flight following</string>
+		<string>Radio: Announce intentions</string>
+		<string>Mixture Rich</string>
+		<string>Fuel Pump On</string>
+		<string>Establish Ground Altitude</string>
+		<string>Area Cleared</string>
+	</array>
+	<key>Notes</key>
+	<array>
+		<string>Glide @73kts. Vref no-flaps @68 + 1/2 gust. Vref flaps 25-40 @63 + 1/2 gust.</string>
+		<string>BOS Flight Following: 122.4</string>
+		<string>Stall speed at 50 degrees is maybe 60kts</string>
+	</array>
+</dict>
+</plist>

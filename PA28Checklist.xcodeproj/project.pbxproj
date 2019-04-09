@@ -1,0 +1,485 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		79593F56219903FD00EFD69D /* PA28ChecklistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79593F55219903FD00EFD69D /* PA28ChecklistTests.swift */; };
+		79DBA96D2199E26A009EB413 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79DBA9612199E26A009EB413 /* LaunchScreen.storyboard */; };
+		79DBA96E2199E26A009EB413 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79DBA9632199E26A009EB413 /* Assets.xcassets */; };
+		79DBA96F2199E26A009EB413 /* PA28Checklist.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 79DBA9642199E26A009EB413 /* PA28Checklist.xcdatamodeld */; };
+		79DBA9702199E26A009EB413 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79DBA9662199E26A009EB413 /* Main.storyboard */; };
+		79DBA9712199E26A009EB413 /* warrior2checklist.plist in Resources */ = {isa = PBXBuildFile; fileRef = 79DBA9672199E26A009EB413 /* warrior2checklist.plist */; };
+		79DBA9722199E26A009EB413 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DBA9682199E26A009EB413 /* AppDelegate.swift */; };
+		79DBA9742199E26A009EB413 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DBA96C2199E26A009EB413 /* ViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		79593F52219903FD00EFD69D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 79593F32219903FD00EFD69D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79593F39219903FD00EFD69D;
+			remoteInfo = PA28Checklist;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		79593F3A219903FD00EFD69D /* PA28Checklist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PA28Checklist.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		79593F51219903FD00EFD69D /* PA28ChecklistTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PA28ChecklistTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		79593F55219903FD00EFD69D /* PA28ChecklistTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PA28ChecklistTests.swift; sourceTree = "<group>"; };
+		79593F57219903FD00EFD69D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79DBA9612199E26A009EB413 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		79DBA9622199E26A009EB413 /* PA28Checklist-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PA28Checklist-Bridging-Header.h"; sourceTree = "<group>"; };
+		79DBA9632199E26A009EB413 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		79DBA9652199E26A009EB413 /* PA28Checklist.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PA28Checklist.xcdatamodel; sourceTree = "<group>"; };
+		79DBA9662199E26A009EB413 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		79DBA9672199E26A009EB413 /* warrior2checklist.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = warrior2checklist.plist; sourceTree = "<group>"; };
+		79DBA9682199E26A009EB413 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		79DBA9692199E26A009EB413 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79DBA96C2199E26A009EB413 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		79593F37219903FD00EFD69D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79593F4E219903FD00EFD69D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		79593F31219903FD00EFD69D = {
+			isa = PBXGroup;
+			children = (
+				79593F3C219903FD00EFD69D /* PA28Checklist */,
+				79593F54219903FD00EFD69D /* PA28ChecklistTests */,
+				79593F3B219903FD00EFD69D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		79593F3B219903FD00EFD69D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				79593F3A219903FD00EFD69D /* PA28Checklist.app */,
+				79593F51219903FD00EFD69D /* PA28ChecklistTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		79593F3C219903FD00EFD69D /* PA28Checklist */ = {
+			isa = PBXGroup;
+			children = (
+				79DBA9602199E26A009EB413 /* App and Resources */,
+				79DBA96B2199E26A009EB413 /* View Controller */,
+				79DBA96A2199E26A009EB413 /* Views */,
+			);
+			path = PA28Checklist;
+			sourceTree = "<group>";
+		};
+		79593F54219903FD00EFD69D /* PA28ChecklistTests */ = {
+			isa = PBXGroup;
+			children = (
+				79593F55219903FD00EFD69D /* PA28ChecklistTests.swift */,
+				79593F57219903FD00EFD69D /* Info.plist */,
+			);
+			path = PA28ChecklistTests;
+			sourceTree = "<group>";
+		};
+		79DBA9602199E26A009EB413 /* App and Resources */ = {
+			isa = PBXGroup;
+			children = (
+				79DBA9612199E26A009EB413 /* LaunchScreen.storyboard */,
+				79DBA9622199E26A009EB413 /* PA28Checklist-Bridging-Header.h */,
+				79DBA9632199E26A009EB413 /* Assets.xcassets */,
+				79DBA9642199E26A009EB413 /* PA28Checklist.xcdatamodeld */,
+				79DBA9662199E26A009EB413 /* Main.storyboard */,
+				79DBA9672199E26A009EB413 /* warrior2checklist.plist */,
+				79DBA9682199E26A009EB413 /* AppDelegate.swift */,
+				79DBA9692199E26A009EB413 /* Info.plist */,
+			);
+			path = "App and Resources";
+			sourceTree = "<group>";
+		};
+		79DBA96A2199E26A009EB413 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		79DBA96B2199E26A009EB413 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				79DBA96C2199E26A009EB413 /* ViewController.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		79593F39219903FD00EFD69D /* PA28Checklist */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79593F5A219903FD00EFD69D /* Build configuration list for PBXNativeTarget "PA28Checklist" */;
+			buildPhases = (
+				79593F36219903FD00EFD69D /* Sources */,
+				79593F37219903FD00EFD69D /* Frameworks */,
+				79593F38219903FD00EFD69D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PA28Checklist;
+			productName = PA28Checklist;
+			productReference = 79593F3A219903FD00EFD69D /* PA28Checklist.app */;
+			productType = "com.apple.product-type.application";
+		};
+		79593F50219903FD00EFD69D /* PA28ChecklistTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79593F5D219903FD00EFD69D /* Build configuration list for PBXNativeTarget "PA28ChecklistTests" */;
+			buildPhases = (
+				79593F4D219903FD00EFD69D /* Sources */,
+				79593F4E219903FD00EFD69D /* Frameworks */,
+				79593F4F219903FD00EFD69D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				79593F53219903FD00EFD69D /* PBXTargetDependency */,
+			);
+			name = PA28ChecklistTests;
+			productName = PA28ChecklistTests;
+			productReference = 79593F51219903FD00EFD69D /* PA28ChecklistTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		79593F32219903FD00EFD69D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "Alexander H List";
+				TargetAttributes = {
+					79593F39219903FD00EFD69D = {
+						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0910;
+						ProvisioningStyle = Automatic;
+					};
+					79593F50219903FD00EFD69D = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 79593F39219903FD00EFD69D;
+					};
+				};
+			};
+			buildConfigurationList = 79593F35219903FD00EFD69D /* Build configuration list for PBXProject "PA28Checklist" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 79593F31219903FD00EFD69D;
+			productRefGroup = 79593F3B219903FD00EFD69D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				79593F39219903FD00EFD69D /* PA28Checklist */,
+				79593F50219903FD00EFD69D /* PA28ChecklistTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		79593F38219903FD00EFD69D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79DBA9702199E26A009EB413 /* Main.storyboard in Resources */,
+				79DBA96E2199E26A009EB413 /* Assets.xcassets in Resources */,
+				79DBA96D2199E26A009EB413 /* LaunchScreen.storyboard in Resources */,
+				79DBA9712199E26A009EB413 /* warrior2checklist.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79593F4F219903FD00EFD69D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		79593F36219903FD00EFD69D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79DBA9742199E26A009EB413 /* ViewController.swift in Sources */,
+				79DBA9722199E26A009EB413 /* AppDelegate.swift in Sources */,
+				79DBA96F2199E26A009EB413 /* PA28Checklist.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79593F4D219903FD00EFD69D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79593F56219903FD00EFD69D /* PA28ChecklistTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		79593F53219903FD00EFD69D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 79593F39219903FD00EFD69D /* PA28Checklist */;
+			targetProxy = 79593F52219903FD00EFD69D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		79593F58219903FD00EFD69D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		79593F59219903FD00EFD69D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		79593F5B219903FD00EFD69D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A7426L9B95;
+				INFOPLIST_FILE = "$(SRCROOT)/PA28Checklist/App and Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = alist.PA28Checklist;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PA28Checklist/App and Resources/PA28Checklist-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		79593F5C219903FD00EFD69D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A7426L9B95;
+				INFOPLIST_FILE = "$(SRCROOT)/PA28Checklist/App and Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = alist.PA28Checklist;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PA28Checklist/App and Resources/PA28Checklist-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		79593F5E219903FD00EFD69D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A7426L9B95;
+				INFOPLIST_FILE = PA28ChecklistTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = alist.PA28ChecklistTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PA28Checklist.app/PA28Checklist";
+			};
+			name = Debug;
+		};
+		79593F5F219903FD00EFD69D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A7426L9B95;
+				INFOPLIST_FILE = PA28ChecklistTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = alist.PA28ChecklistTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PA28Checklist.app/PA28Checklist";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		79593F35219903FD00EFD69D /* Build configuration list for PBXProject "PA28Checklist" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79593F58219903FD00EFD69D /* Debug */,
+				79593F59219903FD00EFD69D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79593F5A219903FD00EFD69D /* Build configuration list for PBXNativeTarget "PA28Checklist" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79593F5B219903FD00EFD69D /* Debug */,
+				79593F5C219903FD00EFD69D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79593F5D219903FD00EFD69D /* Build configuration list for PBXNativeTarget "PA28ChecklistTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79593F5E219903FD00EFD69D /* Debug */,
+				79593F5F219903FD00EFD69D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		79DBA9642199E26A009EB413 /* PA28Checklist.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				79DBA9652199E26A009EB413 /* PA28Checklist.xcdatamodel */,
+			);
+			currentVersion = 79DBA9652199E26A009EB413 /* PA28Checklist.xcdatamodel */;
+			path = PA28Checklist.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 79593F32219903FD00EFD69D /* Project object */;
+}
