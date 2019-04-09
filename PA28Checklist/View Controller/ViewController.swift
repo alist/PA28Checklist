@@ -20,9 +20,19 @@ class CheckCell: UITableViewCell {
 
 class ViewController: UIViewController {
   @IBOutlet weak var tableView: UITableView!
+  /// Sections have their arrays of todos
   var todoData: [(String, Array<(String, Bool)>)] = []
   static let order = "order"
   static let comma: Character = ","
+  
+  var nextToDo: IndexPath? {
+    for (si, section) in todoData.enumerated() {
+      for (ri, item) in section.1.enumerated() {
+        if item.1 == false { return IndexPath(row: ri, section: si) }
+      }
+    }
+    return nil
+  }
   
   func loadData() {
     guard let url = Bundle.main.url(forResource: "warrior2checklist", withExtension: "plist") else { return }
@@ -42,18 +52,24 @@ class ViewController: UIViewController {
     }
   }
   
+  func updateUI() {
+    let selectedPaths = tableView.indexPathsForSelectedRows ?? []
+    for path in selectedPaths {
+      tableView.deselectRow(at: path, animated: false)
+    }
+    tableView.selectRow(at: nextToDo, animated: true, scrollPosition: .middle)
+  }
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     loadData()
     tableView.reloadData()
+    updateUI()
   }
 
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
   }
-
-
 }
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
@@ -81,5 +97,6 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     item.1 = !item.1
     todoData[indexPath.section].1[indexPath.row] = item
     tableView.reloadRows(at: [indexPath], with: .none)
+    updateUI()
   }
 }
