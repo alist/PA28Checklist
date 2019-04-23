@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7938E694226E5A790026E091 /* LMyoPointingModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7938E691226E5A790026E091 /* LMyoPointingModel.mlmodel */; };
+		7938E695226E5A790026E091 /* MyoDatum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7938E692226E5A790026E091 /* MyoDatum.swift */; };
+		7938E696226E5A790026E091 /* MyoModelRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7938E693226E5A790026E091 /* MyoModelRunner.swift */; };
+		7938E699226E5AA80026E091 /* MyoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7938E698226E5AA80026E091 /* MyoKit.framework */; };
+		7938E69D226E5BA20026E091 /* MyoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7938E69C226E5BA20026E091 /* MyoManager.swift */; };
 		79593F56219903FD00EFD69D /* PA28ChecklistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79593F55219903FD00EFD69D /* PA28ChecklistTests.swift */; };
 		79DBA96D2199E26A009EB413 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79DBA9612199E26A009EB413 /* LaunchScreen.storyboard */; };
 		79DBA96E2199E26A009EB413 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79DBA9632199E26A009EB413 /* Assets.xcassets */; };
@@ -28,6 +33,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7938E691226E5A790026E091 /* LMyoPointingModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = LMyoPointingModel.mlmodel; sourceTree = "<group>"; };
+		7938E692226E5A790026E091 /* MyoDatum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyoDatum.swift; sourceTree = "<group>"; };
+		7938E693226E5A790026E091 /* MyoModelRunner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyoModelRunner.swift; sourceTree = "<group>"; };
+		7938E698226E5AA80026E091 /* MyoKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MyoKit.framework; sourceTree = "<group>"; };
+		7938E69C226E5BA20026E091 /* MyoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyoManager.swift; sourceTree = "<group>"; };
 		79593F3A219903FD00EFD69D /* PA28Checklist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PA28Checklist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79593F51219903FD00EFD69D /* PA28ChecklistTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PA28ChecklistTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		79593F55219903FD00EFD69D /* PA28ChecklistTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PA28ChecklistTests.swift; sourceTree = "<group>"; };
@@ -48,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7938E699226E5AA80026E091 /* MyoKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,10 +72,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7938E690226E5A660026E091 /* Model and Logic */ = {
+			isa = PBXGroup;
+			children = (
+				7938E691226E5A790026E091 /* LMyoPointingModel.mlmodel */,
+				7938E692226E5A790026E091 /* MyoDatum.swift */,
+				7938E693226E5A790026E091 /* MyoModelRunner.swift */,
+				7938E69C226E5BA20026E091 /* MyoManager.swift */,
+			);
+			path = "Model and Logic";
+			sourceTree = "<group>";
+		};
+		7938E697226E5AA80026E091 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7938E698226E5AA80026E091 /* MyoKit.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
 		79593F31219903FD00EFD69D = {
 			isa = PBXGroup;
 			children = (
 				79593F3C219903FD00EFD69D /* PA28Checklist */,
+				7938E697226E5AA80026E091 /* Frameworks */,
 				79593F54219903FD00EFD69D /* PA28ChecklistTests */,
 				79593F3B219903FD00EFD69D /* Products */,
 			);
@@ -82,6 +113,7 @@
 		79593F3C219903FD00EFD69D /* PA28Checklist */ = {
 			isa = PBXGroup;
 			children = (
+				7938E690226E5A660026E091 /* Model and Logic */,
 				79DBA9602199E26A009EB413 /* App and Resources */,
 				79DBA96B2199E26A009EB413 /* View Controller */,
 				79DBA96A2199E26A009EB413 /* Views */,
@@ -234,8 +266,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				79DBA9742199E26A009EB413 /* ViewController.swift in Sources */,
+				7938E69D226E5BA20026E091 /* MyoManager.swift in Sources */,
+				7938E696226E5A790026E091 /* MyoModelRunner.swift in Sources */,
 				79DBA9722199E26A009EB413 /* AppDelegate.swift in Sources */,
 				79DBA96F2199E26A009EB413 /* PA28Checklist.xcdatamodeld in Sources */,
+				7938E694226E5A790026E091 /* LMyoPointingModel.mlmodel in Sources */,
+				7938E695226E5A790026E091 /* MyoDatum.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,6 +409,15 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A7426L9B95;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks/**",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks/**",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/PA28Checklist/App and Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = alist.PA28Checklist;
@@ -392,6 +437,15 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A7426L9B95;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks/**",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks/**",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/PA28Checklist/App and Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = alist.PA28Checklist;

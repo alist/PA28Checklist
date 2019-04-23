@@ -9,7 +9,8 @@
 import UIKit
 import AVFoundation
 
-fileprivate let speechRate: Float = 0.5
+fileprivate let speechRate: Float = 0.53
+fileprivate let numberWordsSpoken: Int = 3
 
 class CheckCell: UITableViewCell {
   @IBOutlet weak var todoLabel: UILabel!
@@ -23,20 +24,12 @@ class CheckCell: UITableViewCell {
 class ViewController: UIViewController {
   @IBOutlet weak var tableView: UITableView!
   let speechSynth = AVSpeechSynthesizer()
+  let myoManager = MyoManager()
   
   /// Sections have their arrays of todos
   var todoData: [(String, Array<(String, Bool)>)] = []
   static let order = "order"
   static let comma: Character = ","
-  
-  var nextToDo: IndexPath? {
-    for (si, section) in todoData.enumerated() {
-      for (ri, item) in section.1.enumerated() {
-        if item.1 == false { return IndexPath(row: ri, section: si) }
-      }
-    }
-    return nil
-  }
   
   func loadData() {
     guard let url = Bundle.main.url(forResource: "warrior2checklist", withExtension: "plist") else { return }
@@ -56,24 +49,6 @@ class ViewController: UIViewController {
     }
   }
   
-  func speakTodo() {
-    guard let nextToDo = nextToDo else { return }
-    
-    if nextToDo.row == 0 {
-      let sectionText = todoData[nextToDo.section].0
-      let utter = AVSpeechUtterance(string: sectionText)
-      utter.rate = speechRate
-      utter.postUtteranceDelay = 0.3
-      speechSynth.speak(utter)
-    }
-    
-    let item = todoData[nextToDo.section].1[nextToDo.row]
-    let text = Array(item.0.split(separator: " ").prefix(2)).joined(separator: " ")
-    let utter = AVSpeechUtterance(string: text)
-    utter.rate = speechRate
-    speechSynth.speak(utter)
-  }
-  
   func updateUI() {
     let selectedPaths = tableView.indexPathsForSelectedRows ?? []
     for path in selectedPaths {
@@ -88,11 +63,68 @@ class ViewController: UIViewController {
     loadData()
     tableView.reloadData()
     updateUI()
+    myoManager.delegate = self
+
+    OperationQueue.main.addOperation { [weak self] in
+      self?.openSettings()
+    }
+  }
+  
+  @IBAction func openSettings() {
+    let settings = TLMSettingsViewController.settingsInNavigationController()!
+    present(settings, animated: true, completion: nil)
   }
 
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
   }
+}
+
+extension ViewController {
+  var nextToDo: IndexPath? {
+    for (si, section) in todoData.enumerated() {
+      for (ri, item) in section.1.enumerated() {
+        if item.1 == false { return IndexPath(row: ri, section: si) }
+      }
+    }
+    return nil
+  }
+  
+  func speakTodo() {
+    guard let nextToDo = nextToDo else { return }
+    
+    if nextToDo.row == 0 {
+      let sectionText = todoData[nextToDo.section].0
+      let utter = AVSpeechUtterance(string: sectionText)
+      utter.rate = speechRate
+      utter.postUtteranceDelay = 0.2
+      speechSynth.speak(utter)
+    }
+    
+    let item = todoData[nextToDo.section].1[nextToDo.row]
+    // TODO: Would be cool to not speak `and` or `of` or `as`
+    let text = Array(item.0.split(separator: " ").prefix(numberWordsSpoken)).joined(separator: " ")
+    let utter = AVSpeechUtterance(string: text)
+    utter.rate = speechRate
+    speechSynth.speak(utter)
+  }
+  
+  func completedTodo(indexPath: IndexPath) {
+    var item = todoData[indexPath.section].1[indexPath.row]
+    item.1 = !item.1
+    todoData[indexPath.section].1[indexPath.row] = item
+    tableView.reloadRows(at: [indexPath], with: .none)
+    updateUI()
+  }
+}
+
+extension ViewController: MyoManagerDelegate {
+  func recognizedGesture(manager: MyoManager) {
+    guard let path = nextToDo else { return }
+    completedTodo(indexPath: path)
+  }
+  
+  func madePredicition(manager: MyoManager, prediction: Prediction) {}
 }
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
@@ -116,10 +148,6 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
   }
   
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    var item = todoData[indexPath.section].1[indexPath.row]
-    item.1 = !item.1
-    todoData[indexPath.section].1[indexPath.row] = item
-    tableView.reloadRows(at: [indexPath], with: .none)
-    updateUI()
+    completedTodo(indexPath: indexPath)
   }
 }
