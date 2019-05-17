@@ -70,7 +70,9 @@ class MyoModelRunner {
       currentlyPredicting = false
     }
     guard let dataArray = getDataArray() else { return nil }
-    guard let result = try? model.prediction(input1: dataArray) else{
+    let options = MLPredictionOptions()
+    options.usesCPUOnly = true
+    guard let result = try? model.prediction(input: LMyoPointingModelInput(input1: dataArray), options: options) else {
       return nil
     }
     let output = result.output1

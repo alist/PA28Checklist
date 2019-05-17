@@ -36,6 +36,10 @@ class MyoManager {
   var printClassification: Bool = true
   
   init() {
+    TLMHub.shared()?.shouldNotifyInBackground = true
+    TLMHub.shared()?.shouldSendUsageData = false
+    TLMHub.shared()?.lockingPolicy = .none
+    
     NotificationCenter.default.addObserver(self, selector: #selector(self.onConnect(notification:)), name: NSNotification.Name.TLMHubDidConnectDevice, object: nil)
     
     NotificationCenter.default.addObserver(self, selector: #selector(self.onEMGData(notification:)), name: NSNotification.Name.TLMMyoDidReceiveEmgEvent, object: nil)

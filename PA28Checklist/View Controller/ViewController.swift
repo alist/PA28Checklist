@@ -64,12 +64,13 @@ class ViewController: UIViewController {
     tableView.reloadData()
     updateUI()
     myoManager.delegate = self
-
+    speechSynth.delegate = self
+    
     OperationQueue.main.addOperation { [weak self] in
       self?.openSettings()
     }
   }
-  
+    
   @IBAction func openSettings() {
     let settings = TLMSettingsViewController.settingsInNavigationController()!
     present(settings, animated: true, completion: nil)
@@ -77,6 +78,40 @@ class ViewController: UIViewController {
 
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
+  }
+}
+
+extension ViewController: AVSpeechSynthesizerDelegate {
+  func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, didStart utterance: AVSpeechUtterance) {
+    /// can cancel the timer for unducking!
+  }
+  
+  func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, didFinish utterance: AVSpeechUtterance) {
+    /// set a cancelable timer to un-duck
+    /// stopAudioSessionSession()
+  }
+}
+
+extension ViewController {
+  var audioSession: AVAudioSession {
+    return AVAudioSession.sharedInstance()
+  }
+
+  func setupAudioSession() {
+    do {
+      try audioSession.setCategory(AVAudioSessionCategoryPlayback, with: .duckOthers)
+      try audioSession.setActive(true, with: .notifyOthersOnDeactivation)
+    } catch {
+      print(error)
+    }
+  }
+  
+  func stopAudioSessionSession() {
+    do {
+      try audioSession.setActive(false)
+    } catch {
+      print(error)
+    }
   }
 }
 
@@ -92,6 +127,7 @@ extension ViewController {
   
   func speakTodo() {
     guard let nextToDo = nextToDo else { return }
+    setupAudioSession()
     
     if nextToDo.row == 0 {
       let sectionText = todoData[nextToDo.section].0
